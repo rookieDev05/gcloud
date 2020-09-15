@@ -1,0 +1,21 @@
+# [START django_app]
+runtime: python37
+env: standard
+
+instance_class: F2
+handlers:
+  - url: /static/(.*)
+    static_files: static/\1
+    require_matching_file: false
+    upload: static/.*
+  - url: /.*
+    script: auto
+  - url: .*
+    script: auto
+automatic_scaling:
+  min_idle_instances: 1
+  max_idle_instances: 5
+  min_pending_latency: automatic
+  max_pending_latency: automatic
+network: {}
+# [END django_app]
