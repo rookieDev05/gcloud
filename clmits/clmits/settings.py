@@ -25,7 +25,7 @@ SECRET_KEY = 'k%errnn1w5sb9et0nmpd1=v*xalbnanas7a+_)1+&!-dl69x#7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tiph-csmagno-dev2.an.r.appspot.com','127.0.0.1']
+ALLOWED_HOSTS = ['clmits-project.et.r.appspot.com','127.0.0.1']
 
 
 # Application definition
@@ -85,7 +85,7 @@ if os.getenv('GAE_APPLICATION', None):
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'HOST': '/cloudsql/tiph-csmagno-dev2:us-central1:clmits',
+            'HOST': '/cloudsql/clmits-project:asia-southeast1:clmits',
             'USER': 'root',
             'PASSWORD': 'strongpassword',
             'NAME': 'clmits_db',
